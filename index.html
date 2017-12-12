@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--CSS und Scripts einbinden-->
+    <link rel="stylesheet" type="text/css" href="./css/hamburger.css">
+      <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+      <link rel="stylesheet" type="text/css" href="./css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <!--Meta Angaben-->
+    <meta name="language" content="de">
+    <meta charset="utf-8"/>
+    <meta name="keywords" content="Suchbegriffe">
+    <meta name="description" content="Beschreibung">
+    <meta title="Portfolio Tabea Spielmann">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no height=device-height">
+    <!-- Diese Zeile brauchen wir unbedingt damit unser responsive Design später funktioniert. Später mehr dazu. -->
+  </head>
+  <body>
+    <header>
+      <div class="mobile-menu-bar">
+        <button class="hamburger--spin hamburger" id="hamburger" type="button">
+         <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+         </span>
+        </button>
+      </div>
+      <!--Kopfbereich für Navigation, Bannerbilder etc. -->
+      <nav>
+        <ul id="mobile-menu">
+          <li><a class="scroll" href="index.html#about">Home</a></li>
+          <li><a class="scroll" href="index.html#skills">Skills</a></li>
+          <li><a class="scroll" href="index.html#cv">Lebenslauf</a></li>
+          <li><a class="scroll" href="index.html#portfolio">Portfolio</a></li>
+          <li><a class="scroll" href="index.html#formular">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!--Umschliessender Huptbereich für alle sections und asides -->
+      <!--Section About -->
+      <section id="about">
+        <div id="portrait">
+                    <!-- zuerst das Sichtfenster -->
+            <div class="cssSlider">
+
+                <!-- die inputs um den Slider zu Steuern -->
+                <input type="radio" name="slider" id="slide01" checked="checked">
+                <input type="radio" name="slider" id="slide02">
+                <input type="radio" name="slider" id="slide03">
+                <input type="radio" name="slider" id="slide04">
+
+                <!-- die einzelnen Slides, hier als Liste angelegt -->
+                <ul class="sliderElements">
+                    <li>
+                        <figure>
+                            <img src="./img/slider/slide1.jpg" alt="" height="400" width="1200">
+                            <figcaption>Verfremdung Keith Haring Postkarte</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/slider/slide2.jpg" alt="" height="400" width="1200">
+                            <figcaption>Camera Obscura</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/slider/slide3.jpg" alt="" height="400" width="1200">
+                            <figcaption>Visuelles Lexikon</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/slider/slide4.jpg" alt="" height="400" width="1200">
+                            <figcaption>Verfremdung Keith Haring Postkarte</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+
+                <!-- Eine Steuerung -->
+                <ul class="sliderControls">
+                    <li><label for="slide01"></label></li>
+                    <li><label for="slide02"></label></li>
+                    <li><label for="slide03"></label></li>
+                    <li><label for="slide04"></label></li>
+                </ul>
+            </div>
+        </div>
+        <div id="beschreibung">
+          <div id="name">
+            <h1>Tabea Spielmann</h1>
+            <span>Lehrling Interactive Media Design</span>
+            <p class="bio">
+              Ich lerne seit August 2017 Interactive Media Designer bei business4you in Biel. Vor einem Jahr habe ich den gestalterischen Vorkurs bei Invers in Olten gemacht.
+            </p>
+          </div>
+          <div id="adresse">
+            <strong>Geburtstag:&nbsp;</strong>21.11.2000<br>
+            <strong>Mobil:&nbsp;</strong>078 745 91 85<br>
+            <strong>Email:&nbsp;</strong><a href="mailto:tabea@schuerch.info"> tabea@schuerch.info</a> <br>
+            <strong>Adresse :&nbsp;</strong> <a href="https://www.google.ch/maps/place/Bernweg+9,+3254+Messen/@47.0871327,7.44556,17z/data=!3m1!4b1!4m5!3m4!1s0x478e24f8dfeb3449:0x149dbc4907048dc7!8m2!3d47.0871327!4d7.4477433?hl=de">Bernweg 9 3254 Messen</a><br>
+            <br>
+            <a href="https://www.instagram.com/_tabea__5/"><img class="social-icons"src="./img/social/instagram.svg" height="25px"></a>
+            <a href="https://www.facebook.com/"><img class="social-icons"src="./img/social/facebook.svg" height="25px"></a>
+            <a href="https://twitter.com"><img class="social-icons"src="./img/social/twitter.svg" height="25px"></a>
+          </div>
+          </div>
+        </div>
+      </section>
+      	<div id="wrapper">
+      		<section id="skills">
+      			<h1>Meine Fähigkeiten</h1>
+      			<div class="skills-icons">
+            <div class="single-chart">
+              <div class="single-chart-p">
+              InDesign
+              </div>
+              <svg viewbox="0 0 36 36" class="circular-chart orange">
+                <path class="circle-bg"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <path class="circle"
+                  stroke-dasharray="50, 100"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <text x="18" y="20.35" class="percentage">ID</text>
+              </svg>
+            </div>
+
+            <div class="single-chart">
+              <div class="single-chart-p">
+              HTML / CSS
+              </div>
+              <svg viewbox="0 0 36 36" class="circular-chart green">
+                <path class="circle-bg"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <path class="circle"
+                  stroke-dasharray="20, 100"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <text x="18" y="20.35" class="percentage">Code</text>
+              </svg>
+            </div>
+
+            <div class="single-chart">
+              <div class="single-chart-p">
+              Illustrator
+              </div>
+              <svg viewbox="0 0 36 36" class="circular-chart blue">
+                <path class="circle-bg"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <path class="circle"
+                  stroke-dasharray="75, 100"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <text x="18" y="20.35" class="percentage">AI</text>
+              </svg>
+            </div>
+      			</div>
+      		</section>
+          <section id="cv">
+            <section id="jobs">
+              <h1>Job</h1>
+              <!-- 1. Jobeintrag -->
+              <div class="cv-eintrag">
+                <div class="links">
+                  <img src="./img/cv/aktenkoffer.svg" height="100em"/>
+                  <p class="jahr">Seit 2017</p>
+                </div>
+                <div class="rechts">
+                  <p class="cv-beschreibung">
+                    <span class="cv-titel">Lehre Interactive Media Designerin</span>
+                    <br>
+                    Seit August 2017 mache ich die Ausbildung IMD bei der Marketing und Consulting Agentur business4you in Biel.
+                  </p>
+                </div>
+              </div>
+
+            </section>
+              <section id="ausbildungen">
+                <h1>Ausbildung</h1>
+                <!-- 1. Ausbildungseintrag -->
+                <div class="cv-eintrag">
+                  <div class="links">
+                    <img src="./img/cv/zertifikat.svg" height="100em"/>
+                    <p class="jahr">2016/17</p>
+                  </div>
+                  <div class="rechts">
+                    <p class="cv-beschreibung">
+                      <span class="cv-titel">Gestalterischer Vorkurs Invers</span>
+                      <br>
+                      2016/17 habe ich den gestalterischen Vorkurs an der Invers in Olten gemacht.
+                    </p>
+                  </div>
+                </div>
+                <!-- 2. Ausbildungseintrag -->
+                <div class="cv-eintrag">
+                  <div class="links">
+                    <img src="./img/cv/zertifikat.svg" height="100em" />
+                    <p class="jahr">2013-2016</p>
+                  </div>
+                  <div class="rechts">
+                    <p class="cv-beschreibung">
+                      <span class="cv-titel">Sekundarschule Schnottwil</span>
+                      <br>
+                      Vor dem Vorkurs habe ich die Sekundarschule Profil E in Schnottwil (SO) besucht.
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </section>
+          <!-- Sektion Portfolio -->
+
+          <section id="portfolio">
+        <h1>Portfolio</h1>
+        <div class="portfolio-kacheln">
+          <!-- erster Portfolio Eintrag -->
+          <div class="portfolio-eintrag">
+            <a href="arbeit1.html"><img src="./img/thumbs/thumb_arbeit_1.jpg" title="Arbeit 1">
+              <div class="arbeit-titel">
+                <p>Camera Obscura</p>
+              </div>
+            </a>
+          </div>
+          <!-- zweiter Portfolio Eintrag -->
+          <div class="portfolio-eintrag">
+            <a href="arbeit2.html"><img src="./img/thumbs/thumb_arbeit_2.jpg" title="Arbeit 1">
+              <div class="arbeit-titel">
+                <p>Postkarten</p>
+              </div>
+            </a>
+          </div>
+          <!-- dritter Portfolio Eintrag -->
+          <div class="portfolio-eintrag">
+            <a href="arbeit3.html"><img src="./img/thumbs/thumb_arbeit_3.jpg" title="Arbeit 1">
+              <div class="arbeit-titel">
+                <p>Visuelles Lexikon</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Kontaktformular -->
+      <section id="formular">
+        <h1>Kontakt</h1>
+
+        <div class="kontaktformular">
+
+          <form action="https://formspree.io/tabea@schuerch.info" class="form-horizontal" role="form" method="post">
+          <input type="text" class="form-control" name="name" placeholder="Name" required>
+          <input type="email" class="form-control" name="_replyto" placeholder="Email" required>
+          <input type="text" class="form-control" name="_subject" placeholder="Betreff" required>
+          <textarea class="form-control" rows="5" name="message" placeholder="Mitteilung" required></textarea>
+          <button class="absenden" value="Submit Comment" type="submit">Absenden</button>
+        </form>
+      </div>
+    </section>
+        </div>
+    </main>
+    <!-- Ende der "main" Sektion -->
+    <footer>
+      <!--Fussbereich für Sitemaps, Mailadressen, Scoiallinks etc. -->
+      © Tabea Spielmann 2017 &nbsp;|&nbsp; <a href="mailto:tabea@schuerch.info"> tabea@schuerch.info</a>
+        <!-- &nbsp; erzwingt hier via Unicode ein zusätzliches Leerzeichen.-->
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(".scroll").click(function(event){
+             event.preventDefault();
+             //calculate destination place
+             var dest=0;
+             if($(this.hash).offset().top > $(document).height()-$(window).height()){
+                  dest=$(document).height()-$(window).height();
+             }else{
+                  dest=$(this.hash).offset().top;
+             }
+             //go to destination
+             $('html,body').animate({scrollTop:dest}, 1000,'swing');
+         });
+
+         $(window).scroll(function () {
+           var scrollTop = $(window).scrollTop();
+            var scrollToSkills = $('#skills').offset().top;
+            var skillsHeight = $('#skills').height();
+             if (scrollTop >= scrollToSkills - skillsHeight) {
+               $('.circle').addClass('active');
+             $(this).off();
+             }
+           });
+           $(function(){
+        $(document).on('click', '#hamburger', function (event) {
+        $('#mobile-menu').toggleClass('active');
+        $('#hamburger').toggleClass('is-active');
+        // $('html').toggleClass('noscroll');
+        });
+      });
+    </script>
+    </body>
+  </html>
