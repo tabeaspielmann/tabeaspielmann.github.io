@@ -21,13 +21,15 @@ a[ id= "portfolio" ]:target ~ #main article.panel {
 
 nav ul {
   text-align: center;
-  /*margin: 1em;*/
+  margin:0;
+  padding: 0;
   background-color: #FFFFFF;
   position: fixed;
 	z-index: 3;
 	top: 0;
-  margin: 0;
-	width: 100%;
+  width: 100%;
+
+
 }
 
 .flex-wrapper {
@@ -119,7 +121,7 @@ nav a:hover {
 h1 {
   color: #565656;
   text-transform: uppercase;
-  padding-top: 30px;
+  padding-top: 0;
   line-height: 100%;
 
 }
@@ -127,7 +129,7 @@ h1 {
 
 .social-icons {
   margin-top: 10%;
-  margin-bottom: -15%;
+
 }
 
 
@@ -161,11 +163,6 @@ h1 {
 
 .sliderElements {
     width: 400%; /* Summe der Einzelbreiten der Slides */
-}
-
-.sliderElements > li {
-    float: left;
-    width: 25%; /* 100 durch Anzahl der Slides */
 }
 
 /* Clearfix für die Liste */
@@ -213,7 +210,7 @@ h1 {
 }
 
 .cssSlider {
-    overflow-x: hidden;
+    overflow: hidden;
     position: relative;
 }
 
@@ -229,11 +226,13 @@ h1 {
     transition: left .8s ease-in-out;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
 .sliderElements > li {
-    float: left;
     width: 25%;
+    height: 50vh;
+    object-fit: cover;
     position: relative;
 }
 
@@ -263,7 +262,8 @@ h1 {
 /* Bilder responsive */
 .sliderElements img {
     width: 100%;
-    height: auto;
+    height: 50%;
+
 }
 
 
@@ -271,7 +271,7 @@ h1 {
 .cssSlider input {
     position: absolute;
     left: -99999px;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
     position: relative;
     margin-top: 70px;
 }
@@ -360,29 +360,27 @@ main {
 
 
 #beschreibung {
-  min-width: 50%;
   background:#efefef;
-  margin-top: 65px;
-  display: flex;
-
+  width: 50%;
   color: 565656;
+  display: flex;
+  width: 100%;
 }
 
 #name {
   min-height: 200px;
-  margin-left:5%;
-  margin-right: 5%;
+  padding: 5%;
+  width: 50%;
+
 }
 
 #adresse {
   color:#efefef;
   background:#383737;
   min-height: 200px;
-  padding-left:5%;
-  padding-bottom:5%;
-  padding-top:50px;
-  min-width: 50%;
+  padding: 5%;
   width: 50%;
+
 }
 
 body {
@@ -415,6 +413,7 @@ text-link:hover {
 color: #7a7a7a;
 font-size: 14px;
 text-tansform: none;
+
 }
 
 /* Sektion CV */
@@ -571,13 +570,19 @@ footer {
     display: flex;
     flex-flow: row wrap;
   }
-  #beschreibung {
+  #name {
     width: 100%;
+  }
+  #adresse {
+    width: 100%;
+  }
+  #beschreibung {
+    display: block;
   }
 
   #portrait {
     width: 100%;
-    padding-bottom: 56.25%; /* 16:9 */
+    /*padding-bottom: 56.25%; /* 16:9 */*/
   }
   .single-chart {
     width: 100%;
@@ -593,7 +598,9 @@ footer {
   width: 100%;
 
 }
-
+.jahr {
+  margin-top: 0;
+}
 
   section #cv {
     padding: 0 5%;
